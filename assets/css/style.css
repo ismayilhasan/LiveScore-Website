@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.custom-container {
+  margin: 0 5rem;
+}
+
+#advertising-header {
+  padding: 10px 0;
+  background-color: #000;
+}
+#advertising-header img {
+  width: 828px;
+  margin: auto;
+  display: block;
+}
+
+#Header {
+  background-color: black;
+  padding: 15px 15px 15px 18px;
+  border-bottom: 1px solid #222;
+}
+#Header .header-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Header .header-all .menu {
+  color: #aaa;
+  font-weight: bold;
+}
+#Header .header-all .menu .hamburger-menu {
+  margin-right: 10px;
+  font-size: 20px;
+}
+#Header .header-all .menu .scores-icon {
+  width: 24px;
+  margin-right: 7px;
+}
+#Header .header-all .menu .favorite-icon {
+  width: 24px;
+  margin-right: 7px;
+}
+#Header .header-all .menu .news-icon {
+  width: 24px;
+  margin-right: 7px;
+}
+#Header .header-all .menu .get-app {
+  width: 24px;
+  margin-right: 7px;
+}
+
+#Hero {
+  background-color: #000;
+}
+#Hero .categoires {
+  padding: 10px 0;
+  display: flex;
+  justify-content: start;
+}
+#Hero .categoires .category {
+  margin: 0 4px;
+}
+#Hero .categoires .category a {
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 17.5px;
+  border: 1px solid #181818;
+  color: #aaa;
+  font-weight: 700;
+  background: #181818;
+}
+#Hero .countries {
+  padding: 10px 0;
+}
+#Hero .countries .search-area {
+  border-radius: 8px;
+  border: 1px solid #222;
+  padding: 10px 20px;
+}
+#Hero .countries .search-area .search-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+#Hero .countries .ligs {
+  padding: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #222;
+}
+#Hero .countries .ligs .flags {
+  width: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 8px;
+}
+#Hero .countries .ligs .flag-names {
+  color: #aaa;
+  font-weight: 400;
+}
+#Hero .times {
+  padding: 5px 0;
+  width: 100%;
+  margin: 0 auto;
+}
+#Hero .times .time-menu {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #181818;
+  border-radius: 8px;
+}
+#Hero .times .time-menu .selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #aaa;
+}
+#Hero .times .time-menu .live-logo {
+  width: 38px;
+}
+#Hero .times .time-menu .calendar-img {
+  width: 25px;
+  margin-right: 20px;
+}
+#Hero .matches {
+  padding: 24px 0;
+}
+#Hero .matches .all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Hero .matches .left {
+  display: flex;
+}
+#Hero .matches .champion-league-logo {
+  width: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 10px;
+}
+#Hero .matches a {
+  color: #fff;
+}
+#Hero .matches .description {
+  font-weight: bold;
+}
+#Hero .matches .league {
+  font-weight: 200;
+}
+#Hero .matches .match-result .teams {
+  display: flex;
+  align-items: center;
+}
+#Hero .matches .match-result .current-time {
+  color: #ff6b00;
+}
+#Hero .matches .match-result .current-scores {
+  color: #fff;
+}
+#Hero .matches .match-result .team-img {
+  width: 20px;
+}
+#Hero .matches .match-result .team-name {
+  color: #aaa;
+}
+#Hero .matches .match-result .content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #181818;
+  padding: 0 10px;
+  border-radius: 8px;
+}
+#Hero .matches .match-result .favorite-star {
+  width: 10px;
+}/*# sourceMappingURL=style.css.map */

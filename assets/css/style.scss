@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+  
+}
+ul{
+    list-style: none;
+}
+.custom-container{
+    margin: 0 5rem;
+}
+    // Header Start
+
+#advertising-header{
+    padding: 10px 0;
+    background-color: #000;
+
+
+        img{
+            width: 828px;
+            margin: auto;
+            display: block;
+
+        }
+    
+}
+   
+#Header{
+    background-color: black;
+    padding: 15px 15px 15px 18px;
+    border-bottom: 1px solid #222;
+
+
+    .header-all{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        .menu{
+            color: #aaa;
+            font-weight: bold;
+
+            .hamburger-menu{
+                margin-right: 10px;
+                font-size: 20px;
+            }
+        
+            .scores-icon{
+                width: 24px;
+                margin-right: 7px
+            }
+
+            .favorite-icon{
+                width: 24px;
+                margin-right: 7px
+            }
+            .news-icon{
+                width: 24px;
+                margin-right: 7px
+            }
+            .get-app{
+                width: 24px;
+                margin-right: 7px
+            }
+        
+           }
+    }
+  
+}
+
+ // Header End
+
+
+#Hero{
+    background-color: #000;
+
+    .categoires{
+        padding: 10px 0;
+        display: flex;
+        justify-content: start;
+        .category{
+            margin: 0 4px;
+            a{
+                font-size: 14px;
+                padding: 6px 10px;
+                border-radius: 17.5px;
+                border: 1px solid #181818;
+                color: #aaa;
+                font-weight: 700;
+                background: #181818;
+            }
+        }
+    }
+    .countries{
+        padding: 10px 0;
+
+        .search-area {
+            border-radius: 8px;
+            border: 1px solid #222;
+            padding: 10px 20px;
+            .search-icon{
+
+            }
+            .search-input{
+                background-color: transparent;
+                border:none;
+                outline: none;
+                color: #fff;
+            }
+        }
+
+       .ligs{
+        padding: 10px 0;
+        border-radius: 8px;
+       
+        border: 1px solid #222;
+         .flags{
+            width: 20px;
+            object-fit: contain;
+           border-radius: 8px;
+        }
+
+        .flag-names{
+         
+            color: #aaa;
+            font-weight: 400;
+        }
+      
+       
+       }
+    }
+
+    .times{
+        padding: 5px 0;
+    
+        width: 100%;
+        margin: 0 auto;
+        .time-menu{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #181818;
+            border-radius: 8px;
+         
+            .selection{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 11px;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #aaa;
+           
+            }
+            .live-logo{
+                width: 38px;
+               } 
+
+            .calendar-img{
+                width: 25px;
+                margin-right: 20px;
+            }
+           
+        }
+      
+    }
+
+    .matches{
+        padding: 24px 0;
+        .all{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .left{
+            display: flex;
+           
+        }
+        .champion-league-logo{
+            width: 30px;
+            object-fit: contain;
+            margin-right: 10px;
+        }
+        a{
+            color: #fff;
+
+        }
+        .description{
+            font-weight: bold;
+        }
+        .league{
+            font-weight: 200;
+        }
+     
+        
+        .match-result{
+            .teams{
+                display: flex;
+                align-items: center;
+            }
+            .current-time{
+                color: #ff6b00;
+            }
+            .current-scores{
+                color: #fff;
+            }
+            .team-img{
+                width: 20px;
+            }
+            .team-name{
+                color: #aaa;
+            }
+            .content{
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                background-color: #181818;
+                padding: 0 10px;
+                border-radius: 8px;
+
+            }
+            .favorite-star{
+                width: 10px;
+            }
+            
+        }
+            
+        
+    }
+}

@@ -43,6 +43,7 @@ ul {
 #Header .header-all .menu .hamburger-menu {
   margin-right: 10px;
   font-size: 20px;
+  cursor: pointer;
 }
 #Header .header-all .menu .scores-icon {
   width: 24px;
@@ -252,24 +253,37 @@ ul {
   top: 0;
 }
 
+.active-sidebar {
+  visibility: visible !important;
+  width: 20% !important;
+  opacity: 1 !important;
+}
+
 #Sidebar {
+  visibility: hidden;
   background-color: #181818;
   padding: 10px 0;
   width: 20%;
   position: absolute;
   top: 0;
   left: 0;
+  height: 100vh;
+  opacity: 0;
+  transition: 0.4s;
+  width: 0%;
 }
 #Sidebar .close-icon {
   color: #fff;
   position: absolute;
-  right: 30px;
-  top: 30px;
+  right: 26px;
+  top: 20px;
   font-size: 34px;
+  cursor: pointer;
 }
 #Sidebar .sidebar-logo {
   margin-left: 30px;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 #Sidebar .sidebar-icons {
   width: 24px;

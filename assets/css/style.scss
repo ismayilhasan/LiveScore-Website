@@ -1,4 +1,4 @@
-;
+
 *{
     margin: 0;
     padding: 0;
@@ -51,26 +51,13 @@ ul{
                 font-size: 20px;
                 cursor: pointer;
             }
-        
-            .scores-icon{
+            
+            .header-common-icons{
                 width: 24px;
                 margin-right: 7px
             }
-
-            .favorite-icon{
-                width: 24px;
-                margin-right: 7px
-            }
-            .news-icon{
-                width: 24px;
-                margin-right: 7px
-            }
-            .get-app{
-                width: 24px;
-                margin-right: 7px
-            }
-        
-           }
+           
+        }
     }
   
 }
@@ -420,6 +407,22 @@ ul{
         }
         .times{
             width: 100%;
+        }
+
+        .spain-advertising{
+            display: none;
+        }
+        .advertising-2{
+            display: none;
+        }
+        .news{
+            display: none;
+        }
+        .news-header{
+            display: none;
+        }
+        .advertising-banner{
+            display: none;
         }
     }
 }

@@ -36,14 +36,19 @@ ul{
     padding: 15px 15px 15px 18px;
     border-bottom: 1px solid #222;
 
-
+    #menuIcon{
+        color: #fff;
+        font-size: 24px;
+        margin-right: 20px
+    }
     .header-all{
         display: flex;
         justify-content: space-between;
         align-items: center;
-  
-        .menu{
+        span{
             color: #aaa;
+        }
+        .menu{
             font-weight: bold;
 
             .hamburger-menu{

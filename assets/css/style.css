@@ -31,13 +31,20 @@ ul {
   padding: 15px 15px 15px 18px;
   border-bottom: 1px solid #222;
 }
+#Header #menuIcon {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 20px;
+}
 #Header .header-all {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#Header .header-all .menu {
+#Header .header-all span {
   color: #aaa;
+}
+#Header .header-all .menu {
   font-weight: bold;
 }
 #Header .header-all .menu .hamburger-menu {

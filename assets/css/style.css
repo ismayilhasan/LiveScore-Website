@@ -327,6 +327,22 @@ ul {
      object-fit: contain;
 }
 
+#HeroNews {
+  background-color: #000;
+}
+#HeroNews .ambassador-advertise {
+  padding: 0px 40px;
+  border: 1px solid #181818;
+  width: 300px;
+}
+#HeroNews .ambassador-advertise img {
+  width: 220px;
+  height: 179px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 10px 10px;
+}
+
 @media (max-width: 576px) {
   .custom-container {
     margin: 0 10px;

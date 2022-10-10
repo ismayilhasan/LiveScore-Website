@@ -375,6 +375,29 @@ ul{
 
 }
 
+#HeroNews{
+    background-color: #000;
+    
+    .ambassador-advertise{
+        padding: 0px 40px;
+        border: 1px solid #181818;
+        width: 300px;    
+        img{
+
+            width: 220px;
+            height: 179px;
+            object-fit: contain;
+            padding: 10px 10px;
+        
+
+        }   
+
+    }
+
+ 
+   
+}
+
 @media (max-width:576px)
 {
     

@@ -1,4 +1,4 @@
-
+@import '_news.scss';
 *{
     margin: 0;
     padding: 0;
@@ -292,7 +292,7 @@ ul{
     visibility: visible !important;
     width: 20% !important;
     opacity: 1 !important;
-  
+    z-index: 1;
     
 }
 #Sidebar{
@@ -375,28 +375,10 @@ ul{
 
 }
 
-#HeroNews{
-    background-color: #000;
-    
-    .ambassador-advertise{
-        padding: 0px 40px;
-        border: 1px solid #181818;
-        width: 300px;    
-        img{
 
-            width: 220px;
-            height: 179px;
-            object-fit: contain;
-            padding: 10px 10px;
-        
 
-        }   
 
-    }
 
- 
-   
-}
 
 @media (max-width:576px)
 {
@@ -452,6 +434,9 @@ ul{
         .advertising-banner{
             display: none;
         }
+    }
+    #Sidebar{
+        width: 80% !important;  
     }
 }
 

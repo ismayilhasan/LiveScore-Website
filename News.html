@@ -11,12 +11,18 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- CDNs -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Slider Css Links -->
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+    <link rel="stylesheet" href="./slick/slick.css">
+
 </head>
 <body>
     <!-- Hedader Section Start -->
 
        <header class="advertising-header" id="advertising-header">  
-                 <img class="advertise-image" src="https://f2.cdn.ftd.agency/uploads/media/1/9/45091/v1/First_Dep_Athletes_97090az.gif" alt=""> 
+                 <!-- <img class="advertise-image" src="https://f2.cdn.ftd.agency/uploads/media/1/9/45091/v1/First_Dep_Athletes_97090az.gif" alt="">  -->
        </header> 
     
        <header id="Header">
@@ -24,10 +30,10 @@
                 <div class="header-all">
                     <div class="menu d-flex align-items-center">
                         <i id="menuIcon" class="fa-solid fa-bars hamburger-menu"></i>
-                       <a href=""> <img src="https://www.livescore.com/ls-web-assets/svgs/common/livescore-logo-b3b211143dccd9e22d164701d32a390f.svg" alt="LogoImage"></a>
+                       <a href="./Index.html"> <img src="https://www.livescore.com/ls-web-assets/svgs/common/livescore-logo-b3b211143dccd9e22d164701d32a390f.svg" alt="LogoImage"></a>
                     </div>
                     <div class="menu d-flex align-items-center">
-                       <a href="./Index.html">
+                       <a href="Index.html">
                         <img class="scores-icon header-common-icons" src="./assets/photos/football.svg" alt="Icon">
                         <span>Scores</span>
                        </a>
@@ -45,7 +51,7 @@
                         </a>
                     </div>
                     <div class="menu d-flex align-items-center">
-                       <a href="">
+                       <a href="./GetApp.html">
                             <img class="get-app  header-common-icons" src="./assets/photos/get-app.svg" alt="Icon">
                             <span>Get the app</span>
                        </a>
@@ -121,27 +127,139 @@
        </section>
     <!-- Sidebar Section End -->
 
-       
+       <section id="categorySlider">
+       <div class="custom-container">
+        <button class="prev-button"><i class="fa-solid fa-angle-left"></i></button>
+        <div class="categories">
+            <div class="slide-category-content">All</div>
+            <div class="slide-category-content">Football</div>
+            <div class="slide-category-content">Predictions</div>
+            <div class="slide-category-content">Match reports</div>
+            <div class="slide-category-content">Transfer News</div>
+            <div class="slide-category-content">Transfer news</div>
+            <div class="slide-category-content">Champions Leauge</div>
+            <div class="slide-category-content">Golf</div>
+            <div class="slide-category-content">Crikcet</div>
+            <div class="slide-category-content">Tennis</div>
+            <div class="slide-category-content">Motorsport</div>
+            <div class="slide-category-content">Horse Racing</div>
+            <div class="slide-category-content">Basketball</div>
+            <div class="slide-category-content">Boxing</div>
+            <div class="slide-category-content">Rugby Union</div>
+            <div class="slide-category-content">Amrican Football</div>
+            <div class="slide-category-content">Other</div>
+          
+        </div>
+        <button class="next-button"><i class="fa-solid fa-angle-right"></i></button>
+       </div>
+       </section>
+
+
+ 
+
+
        <section id="HeroNews">
             <div class="custom-container">
                 <div class="row">
-                    <div class="col-md-8"></div>
+                    <div class="col-md-8 right-content">
+                        <div class="news-header">
+                            <h3>Top Stories</h3>
+                            <div class="news-content">
+                                <div class="news">
+                                    <img  src="./assets/photos/news_test_photo.jpg" alt="">
+                                    <div class="text">
+                                        <h2>LiveScore Daily: Today's football news in bite-sized chunks</h2>
+                                        <span class="category">Football</span>
+                                    </div>
+                                </div>
+                                <div class="news">
+                                    <img  src="./assets/photos/news_test_photo2.jpg" alt="">
+                                    <div class="text">
+                                        <h2>LiveScore Daily: Today's football news in bite-sized chunks</h2>
+                                        <span class="category">Football</span>
+                                    </div>
+                                </div>
+                                <div class="news">
+                                    <img  src="./assets/photos/news_test_photo4.jpg" alt="">
+                                    <div class="text">
+                                        <h2>LiveScore Daily: Today's football news in bite-sized chunks</h2>
+                                        <span class="category">Football</span>
+                                    </div>
+                                </div>
+                                <div class="news">
+                                    <img  src="./assets/photos/news_test_photo5.jpg" alt="">
+                                    <div class="text">
+                                        <h2>LiveScore Daily: Today's football news in bite-sized chunks</h2>
+                                        <span class="category">Football</span>
+                                    </div>
+                                </div>
+                                <div class="news">
+                                    <img  src="./assets/photos/news_test_photo6.jpg" alt="">
+                                    <div class="text">
+                                        <h2>LiveScore Daily: Today's football news in bite-sized chunks</h2>
+                                        <span class="category">Football</span>
+                                    </div>
+                                </div>
+                                <div class="news">
+                                    <img  src="./assets/photos/news_test_photo2.jpg" alt="">
+                                    <div class="text">
+                                        <h2>LiveScore Daily: Today's football news in bite-sized chunks</h2>
+                                        <span class="category">Football</span>
+                                    </div>
+                                </div>
+                                <div class="news">
+                                    <img  src="./assets/photos/news_test_photo5.jpg" alt="">
+                                    <div class="text">
+                                        <h2>LiveScore Daily: Today's football news in bite-sized chunks</h2>
+                                        <span class="category">Football</span>
+                                    </div>
+                                </div>
+                                <div class="news">
+                                    <img  src="./assets/photos/news_test_photo6.jpg" alt="">
+                                    <div class="text">
+                                        <h2>LiveScore Daily: Today's football news in bite-sized chunks</h2>
+                                        <span class="category">Football</span>
+                                    </div>
+                                </div>  
+                                <div class="news">
+                                    <img  src="./assets/photos/news_test_photo5.jpg" alt="">
+                                    <div class="text">
+                                        <h2>LiveScore Daily: Today's football news in bite-sized chunks</h2>
+                                        <span class="category">Football</span>
+                                    </div>
+                                </div>  
+                                <div class="news">
+                                    <img  src="./assets/photos/news_test_photo7.jpg" alt="">
+                                    <div class="text">
+                                        <h2>LiveScore Daily: Today's football news in bite-sized chunks</h2>
+                                        <span class="category">Football</span>
+                                    </div>
+                                </div>  
+                                
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-4">
                         <div class="advertising">
-                            <img class="mb-3" src="./assets/photos/little_advertising.gif">
-                            <img class="mb-3" src="./assets/photos/advertising2.gif" alt="advertise-image">
+                            <!-- <img class="mb-3" src="./assets/photos/little_advertising.gif"> -->
+                            <!-- <img class="mb-3" src="./assets/photos/advertising2.gif" alt="advertise-image"> -->
                             <div class="ambassador-advertise mb-3">
                                 <img class="ambassador-img" src="./assets/photos/ambassador.svg" alt="">
                             </div>
                             <div class="banner-advertising">
-                                <img class="banner-img" src="./assets/photos/advevtising-banner.gif" alt="">
+                                <!-- <img class="banner-img" src="./assets/photos/advevtising-banner.gif" alt=""> -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-       </section>
-
+       </section>       
+       <!-- Jquery -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+     <!-- Slider Scripst -->
+    <script src="./slick/slick.min.js"></script>
+    <!-- App JS -->
     <script src="./assets/js/app.js"></script>
 </body>
 </html>

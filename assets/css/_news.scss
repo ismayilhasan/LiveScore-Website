@@ -1,0 +1,158 @@
+#categorySlider{
+    padding: 30px 0;
+    background-color: #000;
+    position: relative;
+    .slide-category-content{
+        font-size: 14px;
+        padding: 6px 10px;
+        border-radius: 17.5px;
+        border: 1px solid #181818;
+        color: #fff;
+        font-weight: 700;
+        background: #222;
+        
+    
+    }
+
+    .prev-button{
+        background-color: black;
+        color: #ff6b00;
+        position: absolute;
+        top: 31%;
+        left: 170px;
+        font-size: 20px;
+
+    }
+    .next-button{
+        background-color: black;
+        color: #ff6b00;
+        position: absolute;
+        top: 31%;
+        right: 170px;
+        font-size: 20px;
+
+    }
+}
+
+
+#NewsSlider{
+    position: relative;
+    background-color: #222;
+    .slide-news-content{
+        width: 60% !important; 
+    }
+    img{
+        width: 53%;
+        height: 186px;
+        object-fit: contain;
+        border-radius: 33px;
+    }
+    .text1{
+        position: absolute;
+        bottom: 10px;
+        left: 112px;
+        color: #fff;
+        font-size: 10px;
+        width: 50%;
+    }
+    h3{
+        font-size: 17px;
+        width: 20%;
+    }
+   
+}
+#HeroNews{
+    background-color: #000;
+    z-index: -1;
+    .right-content{
+        border: 1px solid #222;
+    }
+    .ambassador-advertise{
+        padding: 0px 40px;
+        border: 1px solid #181818;
+        width: 300px;    
+        img{
+
+            width: 220px;
+            height: 179px;
+            object-fit: contain;
+            padding: 10px 10px;
+        
+
+        }   
+
+    }
+    .news-header{
+      
+        color: #fdfdfd;
+        margin: 0;
+        padding: 15px;
+        border-bottom: 1px solid #222;
+        border-top: 1px solid #222;
+        h3{
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+
+    .news-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        .news{
+            display: flex;
+            width: 50%;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #222;
+            padding: 10px 0;
+            img{
+                width: 140px;
+                margin-right: 20px;
+                object-fit: contain;
+            }
+            .text{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                span{
+                    font-size: 12px;
+                    background-color: #222;
+                    padding: 7px 12px;
+                    border-radius: 10px;
+                }
+                h2{
+                    font-size: 12px;
+                    font-weight: bold;
+                    margin-bottom: 7px;
+                    
+                }
+            }
+        }
+    }
+
+ 
+   
+}
+
+
+@media   (max-width:576px)
+{
+    .next-button,.prev-button{
+        display: none !important;
+    }   
+    .slide-category-content{
+        width: max-content !important;
+
+    }
+
+    #HeroNews{
+       .news-content{
+            .news{
+                width: 100%;
+            }
+       }
+    }
+}

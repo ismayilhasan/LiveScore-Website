@@ -174,3 +174,19 @@
     }
     
 }
+@media(max-width:576px)
+{
+    #GetAppHero{
+        .platforms{
+            position:absolute;
+            bottom: 20px;
+            right: 10% !important;
+        }
+        .steps-icons{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

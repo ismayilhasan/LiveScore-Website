@@ -15,7 +15,19 @@ ul{
 .custom-container{
     margin: 0 12rem;
 }
-
+.scroll-button{
+    background-color: #222;
+    color: #ff6b00;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    padding: 8px 13px;
+    border-radius: 14px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
     // Header Start
 
 #advertising-header{

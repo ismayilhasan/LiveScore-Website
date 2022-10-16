@@ -296,6 +296,19 @@
   margin-top: 20px;
 }
 
+@media (max-width: 576px) {
+  #GetAppHero .platforms {
+    position: absolute;
+    bottom: 20px;
+    right: 10% !important;
+  }
+  #GetAppHero .steps-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -312,6 +325,20 @@ ul {
 
 .custom-container {
   margin: 0 12rem;
+}
+
+.scroll-button {
+  background-color: #222;
+  color: #ff6b00;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  padding: 8px 13px;
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 #advertising-header {

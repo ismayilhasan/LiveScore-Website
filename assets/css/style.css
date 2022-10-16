@@ -137,6 +137,165 @@
     width: 100%;
   }
 }
+#GetAppHero {
+  background-color: #000;
+  border: 1px solid #222;
+}
+#GetAppHero .step {
+  color: #ff6b00;
+  padding: 10px 20px;
+  background-color: #181818;
+  border-radius: 100%;
+  font-size: 20px;
+  font-weight: bold;
+}
+#GetAppHero .introduction {
+  text-align: center;
+  color: #fff;
+}
+#GetAppHero .phone-img {
+  position: relative;
+  width: 100%;
+}
+#GetAppHero .phone-img img {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+#GetAppHero .phone-img .platforms {
+  position: absolute;
+  bottom: 105px;
+  right: 34%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#GetAppHero .phone-img .platforms img {
+  width: 150px;
+  margin: 0 4px;
+}
+#GetAppHero .phone-img .downloading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+#GetAppHero .phone-img .downloading button {
+  padding: 10px 34px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  border-style: none;
+  text-decoration: none;
+  outline: none;
+  z-index: 1;
+  background-color: #ff6b00;
+}
+#GetAppHero .description p {
+  max-width: 700px;
+  padding: 0 15px;
+  margin: 25px auto 45px;
+  text-align: center;
+  color: #fff;
+}
+#GetAppHero .iphone-and-ipad {
+  text-align: center;
+  color: #fff;
+  border: 1px solid #222;
+  padding: 20px 0;
+}
+#GetAppHero .iphone-and-ipad .heading {
+  color: gray;
+}
+#GetAppHero .iphone-and-ipad p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+#GetAppHero .iphone-and-ipad img {
+  width: 200px;
+}
+#GetAppHero .android {
+  margin-top: 20px;
+  border: 1px solid #222;
+  text-align: center;
+  padding: 20px 0;
+}
+#GetAppHero .android .heading {
+  color: gray;
+  font-size: 20px;
+}
+#GetAppHero .android p {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+#GetAppHero .android .step-1 {
+  color: #ff6b00;
+  padding: 10px 20px;
+  background-color: #181818;
+  border-radius: 100%;
+  font-size: 20px;
+  font-weight: bold;
+}
+#GetAppHero .android img {
+  width: 150px;
+}
+#GetAppHero .following-options {
+  color: #fff;
+  text-align: center;
+  border: 1px solid #222;
+  padding: 40px 0;
+}
+#GetAppHero .following-options .steps-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#GetAppHero .following-options .steps-icons .settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#GetAppHero .following-options .steps-icons .settings .heading {
+  color: #ff6b00;
+  font-weight: 800;
+}
+#GetAppHero .following-options .steps-icons .settings p {
+  color: #fff;
+  width: 100%;
+  font-weight: bold;
+}
+#GetAppHero .following-options .step2 {
+  padding: 30px 0;
+}
+#GetAppHero .following-options .step2 .expalaining {
+  margin-top: 20px;
+}
+#GetAppHero .following-options .step2 button {
+  padding: 10px 34px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  border-style: none;
+  text-decoration: none;
+  outline: none;
+  z-index: 1;
+  background-color: #ff6b00;
+}
+#GetAppHero .following-options .step3 {
+  padding: 30px 0;
+}
+#GetAppHero .following-options .step3 .expalaining {
+  margin-top: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;

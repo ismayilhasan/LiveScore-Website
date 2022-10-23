@@ -1,36 +1,38 @@
 #categorySlider{
     padding: 30px 0;
-    background-color: #000;
+    background-color: #edf2f6;
     position: relative;
     .slide-category-content{
         font-size: 14px;
         padding: 6px 10px;
         border-radius: 17.5px;
-        border: 1px solid #181818;
-        color: #fff;
+        border: 1px solid #d1e7f7;
+        color: #000;
         font-weight: 700;
-        background: #222;
+        background: #a4cae6;
+        color: #396a8d;
         
     
     }
 
     .prev-button{
-        background-color: black;
-        color: #ff6b00;
+        color: #396a8d;
         position: absolute;
         top: 31%;
         left: 170px;
         font-size: 20px;
+        outline: none;
+        border: none;
 
     }
     .next-button{
-        background-color: black;
-        color: #ff6b00;
+        color: #396a8d;
         position: absolute;
         top: 31%;
         right: 170px;
         font-size: 20px;
-
+        outline: none;
+        border: none;
     }
 }
 
@@ -62,14 +64,14 @@
    
 }
 #HeroNews{
-    background-color: #000;
+    background-color: #edf2f6;
     z-index: -1;
     .right-content{
-        border: 1px solid #222;
+        border: 1px solid #edf2f6;
     }
     .ambassador-advertise{
         padding: 0px 40px;
-        border: 1px solid #181818;
+        border: 1px solid #396a8d;
         width: 300px;    
         img{
 
@@ -84,7 +86,7 @@
     }
     .news-header{
       
-        color: #fdfdfd;
+        color: #000;
         margin: 0;
         padding: 15px;
         border-bottom: 1px solid #222;
@@ -119,9 +121,10 @@
                 align-items: flex-start;
                 span{
                     font-size: 12px;
-                    background-color: #222;
+                    background-color: #396a8d;
                     padding: 7px 12px;
                     border-radius: 10px;
+                    color: #fff;
                 }
                 h2{
                     font-size: 12px;

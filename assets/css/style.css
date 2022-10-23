@@ -137,178 +137,6 @@
     width: 100%;
   }
 }
-#GetAppHero {
-  background-color: #000;
-  border: 1px solid #222;
-}
-#GetAppHero .step {
-  color: #ff6b00;
-  padding: 10px 20px;
-  background-color: #181818;
-  border-radius: 100%;
-  font-size: 20px;
-  font-weight: bold;
-}
-#GetAppHero .introduction {
-  text-align: center;
-  color: #fff;
-}
-#GetAppHero .phone-img {
-  position: relative;
-  width: 100%;
-}
-#GetAppHero .phone-img img {
-  width: 200px;
-  display: block;
-  margin: 0 auto;
-}
-#GetAppHero .phone-img .platforms {
-  position: absolute;
-  bottom: 105px;
-  right: 34%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#GetAppHero .phone-img .platforms img {
-  width: 150px;
-  margin: 0 4px;
-}
-#GetAppHero .phone-img .downloading {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-#GetAppHero .phone-img .downloading button {
-  padding: 10px 34px;
-  border-radius: 5px;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 700;
-  cursor: pointer;
-  border-style: none;
-  text-decoration: none;
-  outline: none;
-  z-index: 1;
-  background-color: #ff6b00;
-}
-#GetAppHero .description p {
-  max-width: 700px;
-  padding: 0 15px;
-  margin: 25px auto 45px;
-  text-align: center;
-  color: #fff;
-}
-#GetAppHero .iphone-and-ipad {
-  text-align: center;
-  color: #fff;
-  border: 1px solid #222;
-  padding: 20px 0;
-}
-#GetAppHero .iphone-and-ipad .heading {
-  color: gray;
-}
-#GetAppHero .iphone-and-ipad p {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-#GetAppHero .iphone-and-ipad img {
-  width: 200px;
-}
-#GetAppHero .android {
-  margin-top: 20px;
-  border: 1px solid #222;
-  text-align: center;
-  padding: 20px 0;
-}
-#GetAppHero .android .heading {
-  color: gray;
-  font-size: 20px;
-}
-#GetAppHero .android p {
-  color: #fff;
-  font-weight: 700;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-#GetAppHero .android .step-1 {
-  color: #ff6b00;
-  padding: 10px 20px;
-  background-color: #181818;
-  border-radius: 100%;
-  font-size: 20px;
-  font-weight: bold;
-}
-#GetAppHero .android img {
-  width: 150px;
-}
-#GetAppHero .following-options {
-  color: #fff;
-  text-align: center;
-  border: 1px solid #222;
-  padding: 40px 0;
-}
-#GetAppHero .following-options .steps-icons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#GetAppHero .following-options .steps-icons .settings {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-#GetAppHero .following-options .steps-icons .settings .heading {
-  color: #ff6b00;
-  font-weight: 800;
-}
-#GetAppHero .following-options .steps-icons .settings p {
-  color: #fff;
-  width: 100%;
-  font-weight: bold;
-}
-#GetAppHero .following-options .step2 {
-  padding: 30px 0;
-}
-#GetAppHero .following-options .step2 .expalaining {
-  margin-top: 20px;
-}
-#GetAppHero .following-options .step2 button {
-  padding: 10px 34px;
-  border-radius: 5px;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 700;
-  cursor: pointer;
-  border-style: none;
-  text-decoration: none;
-  outline: none;
-  z-index: 1;
-  background-color: #ff6b00;
-}
-#GetAppHero .following-options .step3 {
-  padding: 30px 0;
-}
-#GetAppHero .following-options .step3 .expalaining {
-  margin-top: 20px;
-}
-
-@media (max-width: 576px) {
-  #GetAppHero .platforms {
-    position: absolute;
-    bottom: 20px;
-    right: 10% !important;
-  }
-  #GetAppHero .steps-icons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -328,8 +156,8 @@ ul {
 }
 
 .scroll-button {
-  background-color: #222;
-  color: #ff6b00;
+  background-color: rgba(149, 185, 215, 0.3215686275);
+  color: rgb(29, 124, 216);
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -343,7 +171,7 @@ ul {
 
 #advertising-header {
   padding: 10px 0;
-  background-color: #000;
+  background-color: #edf2f6;
 }
 #advertising-header img {
   width: 828px;
@@ -352,12 +180,12 @@ ul {
 }
 
 #Header {
-  background-color: black;
+  background-color: #edf2f6;
   padding: 15px 15px 15px 18px;
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid rgb(29, 124, 216);
 }
 #Header #menuIcon {
-  color: #fff;
+  color: #000;
   font-size: 24px;
   margin-right: 20px;
 }
@@ -367,7 +195,7 @@ ul {
   align-items: center;
 }
 #Header .header-all span {
-  color: #aaa;
+  color: #000;
 }
 #Header .header-all .menu {
   font-weight: bold;
@@ -383,7 +211,7 @@ ul {
 }
 
 #HeaderPhone {
-  background-color: #000;
+  background-color: #edf2f6;
   padding: 10px 0;
   display: none;
 }
@@ -393,12 +221,12 @@ ul {
   align-items: center;
 }
 #HeaderPhone .all i {
-  color: #fff;
+  color: #000;
   font-size: 24px;
 }
 
 #Hero {
-  background-color: #000;
+  background-color: #edf2f6;
 }
 #Hero .categoires {
   padding: 10px 0;
@@ -412,29 +240,36 @@ ul {
   font-size: 14px;
   padding: 6px 10px;
   border-radius: 17.5px;
-  border: 1px solid #181818;
-  color: #aaa;
+  border: 1px solid rgb(29, 124, 216);
+  color: #000;
   font-weight: 700;
-  background: #181818;
+  background: rgba(177, 216, 249, 0.451);
 }
 #Hero .countries {
   padding: 10px 0;
+  width: 188px;
+}
+#Hero .countries .top-leagues {
+  border-top: none;
 }
 #Hero .countries .search-area {
   border-radius: 8px;
-  border: 1px solid #222;
   padding: 10px 20px;
 }
 #Hero .countries .search-area .search-input {
   background-color: transparent;
   border: none;
   outline: none;
-  color: #fff;
+  color: #000;
 }
 #Hero .countries .ligs {
-  padding: 10px 0;
+  padding: 14px 0;
   border-radius: 8px;
-  border: 1px solid #222;
+  border: 1px solid rgb(29, 124, 216);
+  background-color: rgba(180, 204, 223, 0.4509803922);
+}
+#Hero .countries .ligs .top-leagues-heading, #Hero .countries .ligs .all-leagues-heading {
+  color: rgb(111, 111, 185);
 }
 #Hero .countries .ligs .flags {
   width: 20px;
@@ -443,19 +278,166 @@ ul {
   border-radius: 8px;
 }
 #Hero .countries .ligs .flag-names {
-  color: #aaa;
+  color: #000;
   font-weight: 400;
 }
 #Hero .times {
   padding: 5px 0;
   width: 100%;
   margin: 0 auto;
+  /*
+   * Container
+   */
+  /*
+   * Date Picker
+   */
+  /*
+   * Calendar
+   */
+}
+#Hero .times *,
+#Hero .times *:before,
+#Hero .times *:after {
+  box-sizing: border-box;
+}
+#Hero .times .container {
+  margin: 20px auto 0;
+  max-width: 600px;
+}
+#Hero .times .date-picker {
+  position: relative;
+}
+#Hero .times .date-picker__calendar {
+  left: 0;
+  position: absolute;
+  top: 100%;
+  width: 274px;
+  overflow: 0;
+  transition: opacity 0.2s ease-out, visibility 0.2s step-start 0.2s;
+  visibility: hidden;
+}
+#Hero .times .date-picker__calendar_visible {
+  opacity: 1;
+  transition-delay: 0s;
+  visibility: visible;
+}
+#Hero .times .calendar-active {
+  visibility: visible !important;
+  opacity: 1 !important;
+  top: 130px !important;
+}
+#Hero .times .calendar {
+  visibility: hidden;
+  opacity: 0;
+  padding: 10px;
+  width: 505px;
+  position: absolute;
+  top: 125px !important;
+  left: 385px;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  color: #1e2633;
+  text-align: center;
+  line-height: 1.2;
+  border-radius: 7px;
+  border: 3px solid #edeff2;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: 0.5s;
+}
+#Hero .times .calendar__header {
+  position: relative;
+  padding: 10px 35px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+#Hero .times .calendar__year {
+  color: #b3b3b3;
+}
+#Hero .times .calendar__btn {
+  position: absolute;
+  top: 8px;
+  display: block;
+  height: 20px;
+  padding: 0;
+  width: 20px;
+  text-indent: -9999px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+}
+#Hero .times .calendar__btn:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  display: block;
+  height: 8px;
+  width: 8px;
+  border-left: 1px solid #1e2633;
+  border-top: 1px solid #1e2633;
+  transform-origin: center;
+}
+#Hero .times .calendar__btn_prev {
+  left: 10px;
+}
+#Hero .times .calendar__btn_prev:before {
+  left: 8px;
+  transform: rotate(-45deg);
+}
+#Hero .times .calendar__btn_next {
+  right: 10px;
+}
+#Hero .times .calendar__btn_next:before {
+  right: 8px;
+  transform: rotate(135deg);
+}
+#Hero .times .calendar__btn_disabled {
+  pointer-events: none;
+}
+#Hero .times .calendar__btn_disabled:before {
+  border-color: #b2b2b2;
+}
+#Hero .times .calendar__btn:hover:before {
+  border-color: #985e5b;
+}
+#Hero .times .calendar__table {
+  margin-top: 8px;
+  width: 100%;
+  table-layout: fixed;
+}
+#Hero .times .calendar__table-col-header {
+  padding: 12px 0;
+  color: #b2b2b2;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+}
+#Hero .times .calendar__table-cell {
+  padding: 6px 0;
+  color: #1e2633;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+#Hero .times .calendar__table-cell_disabled {
+  color: #d3dbe8;
+  pointer-events: none;
+}
+#Hero .times .calendar__table-cell_selected, #Hero .times .calendar__table-cell:hover {
+  color: #985e5b;
 }
 #Hero .times .time-menu {
   display: flex;
   justify-content: space-between;
-  border: 1px solid #181818;
+  border: 1px solid rgb(29, 124, 216);
+  background-color: rgba(180, 204, 223, 0.4509803922);
   border-radius: 8px;
+  transition: 0.4s;
 }
 #Hero .times .time-menu .selection {
   display: flex;
@@ -465,14 +447,17 @@ ul {
   font-size: 11px;
   text-transform: uppercase;
   font-weight: bold;
-  color: #aaa;
+  color: #000;
 }
 #Hero .times .time-menu .live-logo {
   width: 38px;
+  background-color: #000;
 }
 #Hero .times .time-menu .calendar-img {
   width: 25px;
   margin-right: 20px;
+  background-color: #000;
+  cursor: pointer;
 }
 #Hero .matches {
   padding: 14px 0;
@@ -492,7 +477,7 @@ ul {
   margin-right: 10px;
 }
 #Hero .matches a {
-  color: #fff;
+  color: #000;
 }
 #Hero .matches .description {
   font-weight: bold;
@@ -505,22 +490,22 @@ ul {
   align-items: center;
 }
 #Hero .matches .match-result .current-time {
-  color: #ff6b00;
+  color: #000;
 }
 #Hero .matches .match-result .current-scores {
-  color: #fff;
+  color: #000;
 }
 #Hero .matches .match-result .team-img {
   width: 20px;
 }
 #Hero .matches .match-result .team-name {
-  color: #aaa;
+  color: #000;
 }
 #Hero .matches .match-result .content {
   display: flex;
   justify-content: start;
   align-items: center;
-  background-color: #181818;
+  background-color: rgba(180, 204, 223, 0.4509803922);
   padding: 0 10px;
   border-radius: 8px;
 }
@@ -529,11 +514,11 @@ ul {
 }
 #Hero .news-header {
   width: 69%;
-  color: #fff;
+  color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #181818;
+  border: 1px solid rgb(29, 124, 216);
   border-radius: 8px;
   padding: 10px 10px;
   margin-top: 10px;
@@ -559,14 +544,6 @@ ul {
   bottom: 6px;
   left: 14px;
 }
-#Hero .news .news-content .news-photo-ambassador {
-  width: 300px;
-  height: 100px;
-  border: 1px solid #181818;
-  border-radius: 8px;
-  margin-top: 10px;
-  padding: 10px 0;
-}
 #Hero .advertising-banner {
   position: -webkit-sticky;
   position: sticky;
@@ -582,7 +559,7 @@ ul {
 
 #Sidebar {
   visibility: hidden;
-  background-color: #181818;
+  background-color: #edf2f6;
   padding: 10px 0;
   width: 20%;
   position: absolute;
@@ -594,7 +571,7 @@ ul {
   width: 0%;
 }
 #Sidebar .close-icon {
-  color: #fff;
+  color: #000;
   position: absolute;
   right: 26px;
   top: 20px;
@@ -611,51 +588,13 @@ ul {
   margin-right: 15px;
 }
 #Sidebar .sidebar-menu-text {
-  color: #fff;
+  color: #000;
   font-weight: 700;
-}
-#Sidebar .sidebar-advertise {
-  margin-top: 70px;
-}
-#Sidebar .sidebar-advertise .advertise-mobile-app {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  color: #fff;
-  font-size: 17px;
-  font-weight: 600;
-}
-#Sidebar .sidebar-advertise .advertise-mobile-app img {
-  width: 34px;
-  margin-right: 10px;
-}
-#Sidebar .sidebar-advertise .appstore-google {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-#Sidebar .sidebar-advertise .appstore-google img {
-  width: 110px;
-  height: 60px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  margin: 0 10px;
-}
-#Sidebar .sidebar-advertise .ambassador-advertise {
-  padding: 10px 0;
-  border-top: 1px solid #222;
-}
-#Sidebar .sidebar-advertise .ambassador-advertise img {
-  width: 202px;
-  margin-left: 50px;
-  height: 109px;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 @media (max-width: 576px) {
   .custom-container {
-    margin: 0 10px;
+    margin: 0 13px;
   }
   .advertising-header {
     display: none;
@@ -673,7 +612,7 @@ ul {
     font-size: 12px;
     padding: 6px 7px;
     border-radius: 17.5px;
-    border: 1px solid #181818;
+    border: 1px solid rgb(29, 124, 216);
     color: #aaa;
     font-weight: 700;
     background: #181818;
@@ -699,7 +638,14 @@ ul {
   #Hero .advertising-banner {
     display: none;
   }
+  #Hero .calendar {
+    width: 390px !important;
+    left: 0 !important;
+  }
   #Sidebar {
     width: 80% !important;
+  }
+  .scroll-button {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

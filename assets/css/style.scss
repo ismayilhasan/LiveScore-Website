@@ -1,5 +1,4 @@
 @import '_news.scss';
-@import '_getapp.scss';
 *{
     margin: 0;
     padding: 0;
@@ -16,8 +15,8 @@ ul{
     margin: 0 12rem;
 }
 .scroll-button{
-    background-color: #222;
-    color: #ff6b00;
+    background-color:   #95b9d752;
+    color: rgb(29, 124, 216);;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -32,7 +31,7 @@ ul{
 
 #advertising-header{
     padding: 10px 0;
-    background-color: #000;
+    background-color: #edf2f6;
 
 
         img{
@@ -45,12 +44,12 @@ ul{
 }
    
 #Header{
-    background-color: black;
+    background-color: #edf2f6;
     padding: 15px 15px 15px 18px;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid rgb(29, 124, 216);
 
     #menuIcon{
-        color: #fff;
+        color: #000;
         font-size: 24px;
         margin-right: 20px
     }
@@ -59,7 +58,7 @@ ul{
         justify-content: space-between;
         align-items: center;
         span{
-            color: #aaa;
+            color: #000;
         }
         .menu{
             font-weight: bold;
@@ -81,7 +80,7 @@ ul{
 }
 
 #HeaderPhone{
-    background-color: #000;
+    background-color: #edf2f6;
     padding: 10px 0;
     display: none;
     .all{
@@ -89,7 +88,7 @@ ul{
         justify-content: space-between;
         align-items: center;
         i{
-            color: #fff;
+            color: #000;
             font-size: 24px;
         }
     }
@@ -99,7 +98,7 @@ ul{
 
 
 #Hero{
-    background-color: #000;
+    background-color: #edf2f6;
 
     .categoires{
         padding: 10px 0;
@@ -111,36 +110,41 @@ ul{
                 font-size: 14px;
                 padding: 6px 10px;
                 border-radius: 17.5px;
-                border: 1px solid #181818;
-                color: #aaa;
+                border: 1px solid rgb(29, 124, 216);
+                color: #000;
                 font-weight: 700;
-                background: #181818;
+                background: rgba(177, 216, 249, 0.451);
             }
         }
     }
     .countries{
         padding: 10px 0;
-
+        width: 188px;
+        .top-leagues{
+            border-top: none;
+        }
         .search-area {
             border-radius: 8px;
-            border: 1px solid #222;
+           
             padding: 10px 20px;
-            .search-icon{
-
-            }
+         
             .search-input{
                 background-color: transparent;
                 border:none;
                 outline: none;
-                color: #fff;
+                color: #000;
             }
         }
 
        .ligs{
-        padding: 10px 0;
+        padding: 14px 0;
         border-radius: 8px;
-       
-        border: 1px solid #222;
+        border: 1px solid rgb(29, 124, 216);
+        background-color: rgba(180, 204, 223, 0.4509803922);
+        .top-leagues-heading,.all-leagues-heading
+        {
+            color: rgb(111, 111, 185);
+        }
          .flags{
             width: 20px;
             object-fit: contain;
@@ -149,7 +153,7 @@ ul{
 
         .flag-names{
          
-            color: #aaa;
+            color: #000;
             font-weight: 400;
         }
       
@@ -159,15 +163,204 @@ ul{
 
     .times{
         padding: 5px 0;
-    
         width: 100%;
         margin: 0 auto;
+        
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*
+ * Container
+ */
+.container {
+  margin: 20px auto 0;
+  max-width: 600px;
+}
+
+/*
+ * Date Picker
+ */
+.date-picker {
+  position: relative;
+  
+  &__calendar {
+    left: 0;
+    position: absolute;
+    top: 100%;
+    
+    width: 274px;
+    
+    overflow: 0;
+    
+    transition: opacity 0.2s ease-out,
+                visibility 0.2s step-start 0.2s;
+    visibility: hidden;
+  
+    &_visible {
+      opacity: 1;
+      
+      transition-delay: 0s;
+      visibility: visible;
+    }
+  }
+}
+
+/*
+ * Calendar
+ */
+
+ .calendar-active{
+    visibility: visible !important;
+    opacity: 1 !important;
+    top: 130px !important;
+ }
+
+.calendar {
+    visibility: hidden;
+    opacity: 0;
+    padding: 10px;
+    width: 505px;
+    position: absolute;
+    top: 125px !important;
+    left: 385px;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    color: #1e2633;
+    text-align: center;
+    line-height: 1.2;
+    border-radius: 7px;
+    border: 3px solid #edeff2;
+    user-select: none;
+    transition: 0.5s;
+  
+  &__header {
+    position: relative;
+    
+    padding: 10px 35px;
+    
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+  
+  &__year {
+    color: #b3b3b3;
+  }
+  
+  &__btn {
+    position: absolute;
+    top: 8px;
+    
+    display: block;
+    height: 20px;
+    padding: 0;
+    width: 20px;
+    
+    text-indent: -9999px;
+    
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    
+    &:before {
+      content: "";
+      
+      position: absolute;
+      top: 6px;
+      
+      display: block;
+      height: 8px;
+      width: 8px;
+      
+      border-left: 1px solid #1e2633;
+      border-top: 1px solid #1e2633;
+      transform-origin: center;
+    }
+    
+    &_prev {
+      left: 10px;
+
+      &:before {
+        left: 8px;
+        transform: rotate(-45deg);
+      }
+    }
+  
+    &_next {
+      right: 10px;
+
+      &:before {
+        right: 8px;
+        transform: rotate(135deg);
+      }
+    }
+    
+    &_disabled {
+      pointer-events: none;
+      
+      &:before {
+        border-color: #b2b2b2;
+      }
+    }
+    
+    &:hover {
+      &:before {
+        border-color: #985e5b;
+      }
+    }
+  }
+
+  &__table {
+    margin-top: 8px;
+    width: 100%;
+    
+    table-layout: fixed;
+  }
+  
+  &__table-col-header {
+    padding: 12px 0;
+
+    color: #b2b2b2;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+  }
+  
+  &__table-cell {
+    padding: 6px 0;
+    
+    color: #1e2633;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    
+    cursor: pointer;
+    
+    &_disabled {
+      color: #d3dbe8;
+      pointer-events: none;
+    }
+    
+    &_selected,
+    &:hover {
+      color: #985e5b;
+    }
+  }
+}
+
+
         .time-menu{
             display: flex;
             justify-content: space-between;
-            border: 1px solid #181818;
+            border: 1px solid rgb(29, 124, 216);
+            background-color: rgba(180, 204, 223, 0.4509803922);
             border-radius: 8px;
-         
+            transition: .4s;
+          
             .selection{
                 display: flex;
                 flex-direction: column;
@@ -176,16 +369,19 @@ ul{
                 font-size: 11px;
                 text-transform: uppercase;
                 font-weight: bold;
-                color: #aaa;
+                color: #000;
            
             }
             .live-logo{
                 width: 38px;
+                background-color:#000;
                } 
 
             .calendar-img{
                 width: 25px;
                 margin-right: 20px;
+                background-color: #000;
+                cursor: pointer;
             }
            
         }
@@ -194,6 +390,7 @@ ul{
 
     .matches{
         padding: 14px 0;
+        
         .all{
             display: flex;
             justify-content: space-between;
@@ -209,7 +406,7 @@ ul{
             margin-right: 10px;
         }
         a{
-            color: #fff;
+            color: #000;
 
         }
         .description{
@@ -226,22 +423,22 @@ ul{
                 align-items: center;
             }
             .current-time{
-                color: #ff6b00;
+                color: #000;
             }
             .current-scores{
-                color: #fff;
+                color: #000;
             }
             .team-img{
                 width: 20px;
             }
             .team-name{
-                color: #aaa;
+                color: #000;
             }
             .content{
                 display: flex;
                 justify-content: start;
                 align-items: center;
-                background-color: #181818;
+                background-color: #b4ccdf73;
                 padding: 0 10px;
                 border-radius: 8px;
 
@@ -256,11 +453,11 @@ ul{
     }
     .news-header{
         width: 69%;
-        color: #fff;
+        color: #000;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border: 1px solid #181818;
+        border: 1px solid rgb(29, 124, 216);
         border-radius: 8px;
         padding: 10px 10px ;
         margin-top: 10px;
@@ -286,14 +483,7 @@ ul{
                     left: 14px;
                 }
             }
-            .news-photo-ambassador{
-                width: 300px;
-                height: 100px;
-                border: 1px solid #181818;
-                border-radius: 8px;
-                margin-top: 10px;
-                padding: 10px 0;
-            }
+           
         }
     }
     .advertising-banner{
@@ -310,7 +500,7 @@ ul{
 }
 #Sidebar{
     visibility: hidden;
-    background-color: #181818;
+    background-color: #edf2f6;
     padding: 10px 0;
     width: 20%;
     position: absolute;
@@ -323,7 +513,7 @@ ul{
    
     
     .close-icon{
-        color: #fff;
+        color: #000;
         position: absolute;
         right: 26px;
         top: 20px;
@@ -341,55 +531,12 @@ ul{
        
     }
     .sidebar-menu-text{
-        color: #fff;
+        color: #000;
         font-weight: 700;
 
     }
-    .sidebar-advertise{
-        margin-top: 70px;
-        
-        .advertise-mobile-app{
-            width: 80%;
-            margin: 0 auto;
-            display: flex;
-            
-            color: #fff;
-            font-size: 17px;
-            font-weight: 600;
-            img{
-                width: 34px;
-                margin-right: 10px;
-            }
-        }
-        .appstore-google{
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-            img{
-                width: 110px;
-                height: 60px;
-                object-fit: contain;
-                margin: 0 10px;
-            }
-        }
-        .ambassador-advertise{
-            padding: 10px 0;
-            border-top: 1px solid #222;
-            img{
-                width: 202px;
-                margin-left: 50px;
-                height: 109px;
-                object-fit: contain;
-
-            }
-        }
-
-    }
-
+ 
 }
-
-
-
 
 
 
@@ -397,7 +544,7 @@ ul{
 {
     
     .custom-container{
-        margin: 0 10px;
+        margin: 0 13px;
     }
     .advertising-header
     {
@@ -417,7 +564,7 @@ ul{
                 font-size: 12px;
                 padding: 6px 7px;
                 border-radius: 17.5px;
-                border: 1px solid #181818;
+                border: 1px solid rgb(29, 124, 216);
                 color: #aaa;
                 font-weight: 700;
                 background: #181818;
@@ -447,9 +594,19 @@ ul{
         .advertising-banner{
             display: none;
         }
+
+        .calendar{
+            width: 390px !important;
+            left: 0 !important;
+            
+            
+        }
     }
     #Sidebar{
         width: 80% !important;  
+    }
+    .scroll-button{
+        display: none;
     }
 }
 

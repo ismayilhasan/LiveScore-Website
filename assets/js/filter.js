@@ -1,4 +1,5 @@
 // Filter Search Engine For Leauges
+
 document.querySelector('#searchInput').addEventListener('input',filterList)
 function filterList()
 {

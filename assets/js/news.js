@@ -12,6 +12,7 @@ for (const menuIcon of menuIcons ) {
     })
     
 }
+
 // Slider Settings
 $('.categories').slick({
     dots: false,

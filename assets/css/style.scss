@@ -492,6 +492,79 @@ ul{
         position: sticky;
         top: 0;
     }
+
+    // Current Match
+    .current-match{
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 28px 0;
+        font: 700 12px / 1.14 Roboto, sans-serif;
+        font-size: 15px;
+        .heading{
+            ul{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 0 20px;
+                li{
+                    margin: 0 10px;
+                }
+            }
+    
+            .country,.league{
+                color: rgb(29, 124, 216);
+                font-weight: 700;
+            }
+    
+        }
+        .club-names{
+            p{
+                margin: 0 40px;
+            }
+        }
+        .club-contents{
+           .team-all{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 17px;
+            padding: 0px 10px;
+            
+           }
+            .team1,.team2{
+                margin-top: 15px;
+            }
+            img{
+                width: 50px;
+                object-fit: contain;
+                margin: 0 16px;
+            }
+            h3{
+                font-weight: bold;
+            }
+            .line{
+                width: 100%;
+                height: 1px;
+                background-color: #aaa;
+            }
+            .tabs{
+                cursor: pointer;
+                text-transform: uppercase;
+                color: rgb(29, 124, 216);
+                opacity: 1;
+                padding: 16px;
+                transition: opacity 200ms ease 0s;
+                height: 48px;
+                font-weight: bold;
+                margin: 0 17px;
+                flex: 1;
+                
+
+            }
+         
+        }
+        
+    }
 }
 .active-sidebar{
     visibility: visible !important;

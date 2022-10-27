@@ -101,7 +101,7 @@ ul{
 
 #Hero{
     background-color: #edf2f6;
-
+    position: relative;
     .categoires{
         padding: 10px 0;
         display: flex;
@@ -443,6 +443,7 @@ ul{
                 background-color: #b4ccdf73;
                 padding: 0 10px;
                 border-radius: 8px;
+                cursor: pointer;
 
             }
             .favorite-star{
@@ -495,11 +496,30 @@ ul{
 
     // Current Match
     .current-match{
+        position: absolute;
+        z-index: 1;
+        display: none;
+        .displaying-match{
+            display: block;
+        }
+        @mixin who-win-buttons {
+            outline: none;
+            border: none;
+            margin: 0 10px;
+            padding: 10px 16px;
+            border-radius: 7px;
+            font-weight: bold;
+            font-size: 20px;
+            flex: 1;
+        }
+
         background-color: #fff;
         border-radius: 5px;
-        padding: 28px 0;
+        padding: 28px 8px;
         font: 700 12px / 1.14 Roboto, sans-serif;
         font-size: 15px;
+
+      
         .heading{
             ul{
                 display: flex;
@@ -547,22 +567,483 @@ ul{
                 height: 1px;
                 background-color: #aaa;
             }
+            .active-tab-menu{
+                background-color: #0f598b !important;
+                color: #fff !important;
+                font-weight: bold !important;
+            }
             .tabs{
                 cursor: pointer;
                 text-transform: uppercase;
                 color: rgb(29, 124, 216);
                 opacity: 1;
-                padding: 16px;
                 transition: opacity 200ms ease 0s;
-                height: 48px;
                 font-weight: bold;
                 margin: 0 17px;
                 flex: 1;
-                
+                text-align: center;
+                padding: 10px 0;
+                transition: .5s;
+                margin-top: 14px;
+                flex: 1;
+                &:hover{
+                    background-color: #0f598b;
+                    color: #fff;
+                }
 
             }
+            .momentum{
+                text-align: center;
+                background-color:rgb(237, 241, 246);
+                padding: 10px 8px;
+                border-radius: 7px;
+                color: rgb(29, 124, 216);
+                h5{
+                    font-weight: bold ;
+                }
+            }
+            .who-will-win-content{
+                padding: 10px 0;
+                background-color:rgb(237, 241, 246);
+                margin-top: 10px;
+                text-align: center;
+                h5{
+                    font-weight: bold;
+                    padding: 5px 0;
+                }
+            }
+            .who-will-win{
+                display: flex;
+                justify-content: space-between;
+                button{
+                   @include who-win-buttons;
+                   color: #FFF;
+                
+                }
+                .left{
+                    background-color:  rgb(20, 172, 35);;
+                }
+                .middle{
+                    background-color: rgb(164, 169, 179);
+                }
+                .right{
+                    background-color: rgb(29, 124, 216);
+                }
+            }
+
+            .manager-head-2-head{
+                text-align: center;
+                padding: 10px 0;
+                background-color:rgb(237, 241, 246);
+                margin-top: 10px;
+                border-radius: 7px; 
+
+                h5{
+                    font-weight: bold;
+                    font-size: 17px;
+                }
+               .body{
+                display: flex;
+                justify-content: space-between;
+                .left-team,.right-team{
+                    display: flex;
+                    width: 50%;
+                    justify-content: center;
+                    img{border-radius: 100%;}
+                    p{
+                        text-align: left;
+                    }
+                }
+                .middle-team{
+                    p{
+                        font-size: 30px;
+                    }
+                }
+                .manager-names{
+                    color: rgb(34, 34, 38);
+                }
+               }
+            }
+
+            .head-2-head{
+                margin-top: 30px;
+                .left-team-head,.right-team-head{
+                    display: flex;
+                    width: 50%;
+                    justify-content: center;
+                }
+                .middle-team{
+                    p{
+                        font-size: 30px;
+                    }
+                }
+                p{
+                    text-align: left;
+                }
+            }
+
+            .lineups-content{
+                $gray300: #D2D2D2;
+                $gray500: #6E6E6E;
+                $gray700: #212121;
+                $gray900: #0F0F0F;
+                $blue: #29BDDE;
+                $lightBlue: #31A49B;
+                $red: #FF3D3D;
+                $border-radius: 4px;
+                $lightGreen: #507450;
+                $green: #29502C;
+                $darkRed: #BE2C2C;
+                $space-size: 8px;
+                $space-size-2: $space-size * 2;
+                $space-size-3: $space-size * 3;
+                $space-size-4: $space-size * 4;
+                $space-size-5: $space-size * 5;
+                $space-size-6: $space-size * 6;
+                $white: $gray300;
+$secondaryTextColor: $gray500;
+$black: $gray900;
+$bodyBg: $gray700;
+$borderColor: $gray700;
+$primaryColor: $blue;
+.text-danger{
+    color: $red;
+}
+.label{
+    font-size: 9px;
+    text-transform: uppercase;
+    color: $secondaryTextColor;
+    font-weight: 700;
+    letter-spacing: 0.095em;
+    margin-bottom: $space-size / 2;
+}
+.mb-05{
+    margin-bottom: $space-size / 2;
+}
+.mb-0{
+    margin-bottom: 0 !important;
+}
+.mb-1{
+    margin-bottom: $space-size;
+}
+.mt-1{
+    margin-top: $space-size;
+}
+.mt-2{
+    margin-top: $space-size-2;
+}
+.ml-1{
+    margin-left: $space-size;
+}
+.ml-2{
+    margin-left: $space-size-2;
+}
+.ml-3{
+    margin-left: $space-size-3;
+}
+.ml-4{
+    margin-left: $space-size-4;
+}
+.ml-5{
+    margin-left: $space-size-5;
+}
+
+.mr-1{
+    margin-right: $space-size;
+}
+.mr-2{
+    margin-right: $space-size-2;
+}
+.mr-3{
+    margin-right: $space-size-3;
+}
+.mr-4{
+    margin-right: $space-size-4;
+}
+.mr-5{
+    margin-right: $space-size-5;
+}
+html,body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    background: $bodyBg;
+    color: $white;
+    width: 414px;
+    font-weight: 600;
+    margin:  $space-size auto;
+    padding: $space-size-2;
+}
+*{
+    box-sizing: border-box;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: $space-size-2 - 2px;
+  margin: 0 $space-size-3 + $space-size / 2;
+  &--home {
+    .player__number {
+      background: $darkRed;
+    }
+  }
+  &--away {
+    .player__number {
+      background: $lightBlue;
+    }
+  }
+  &__number {
+    width: $space-size-4;
+    height: $space-size-4;
+    border-radius: 100%;
+    margin-bottom: $space-size / 3;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  &__name {
+    font-size: 10px;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    white-space: nowrap;
+    bottom: 0;
+  }
+}
+.formation {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+   &--home {
+    .player__number {
+      background: $darkRed;
+    }
+  }
+  &--away {
+    .player__number {
+      background: $lightBlue;
+    }
+    transform: rotate(180deg);
+  }
+  &__line {
+    display: flex;
+    padding: 0 $space-size-3;
+    margin-bottom: $space-size;
+    justify-content: center;
+  }
+}
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: $space-size-2 - 2px;
+  margin: 0 $space-size-3 + $space-size / 2;
+  &__number {
+    width: $space-size-4;
+    height: $space-size-4;
+    border-radius: 100%;
+    margin-bottom: $space-size / 3;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  &__name {
+    font-size: 10px;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    white-space: nowrap;
+    bottom: 0;
+  }
+}
+.field {
+  border-radius: $border-radius;
+  background: $green;
+  padding: $space-size;
+  &__center-line {
+    width: 100%;
+    height: 2px;
+    background: $lightGreen;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    &:after {
+      width: 60px;
+      height: 60px;
+      border: 2px solid $lightGreen;
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      border-radius: 100%;
+    }
+    &:before {
+      width: $space-size;
+      height: $space-size;
+      background: $lightGreen;
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      border-radius: 100%;
+    }
+  }
+  &__container {
+    border-radius: $border-radius / 2;
+    border: 2px solid $lightGreen;
+    position: relative;
+  }
+  &__half {
+    position: relative;
+    height: 290px;
+    overflow: hidden;
+    &--reverse {
+      transform: rotate(180deg);
+    }
+  }
+  .penalty-box {
+    border: 2px solid $lightGreen;
+    width: 35%;
+    height: 50px;
+    position: absolute;
+    top: -2px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    &__container {
+      position: relative;
+      height: 100%;
+      background: $green;
+      z-index: 1;
+    }
+    &:after {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      border: 2px solid $lightGreen;
+      position: absolute;
+      bottom: -20px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      content: "";
+      display: block;
+    }
+    &__infield {
+      border: 2px solid $lightGreen;
+      width: 35%;
+      height: 38%;
+      position: absolute;
+      top: -2px;
+      margin: auto;
+      right: 0;
+      left: 0;
+    }
+  }
+  &__corner {
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: -10px;
+    border: 2px solid $lightGreen;
+    &--left {
+      left: -10px;
+    }
+    &--right {
+      right: -10px;
+    }
+  }
+}
+            }
+            .standings{ 
+                background-color: rgb(237, 241, 246);
+                .heading{
+                    text-align: center;
+                    padding: 10px 0;
+                    
+                }
+.ptable table{
+	margin: 30px auto;
+	border-collapse: collapse;
+}
+
+.ptable{
+	margin: 0px 0% 30px 0%;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th{
+	background-color: black;
+	color: #ffe221;
+}
+
+.headin{
+	text-align: center;
+	text-decoration: none;
+	color: #ffe221;
+	margin: 30px;
+	display: block;
+}
+
+.wpos{
+	text-align: center;
+}
+
+.wpos td{
+	color: #77ff21;
+}
+
+.pos{
+	text-align: center;
+}
+
+.pos td{
+	color: #ff7b21;
+}
+
+table .col{
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.wpos:hover{
+	background-color: #77ff21;
+}
+
+.wpos:hover td{
+	color: #000000;
+}
+
+.pos:hover{
+	background-color: #ff7b21;
+}
+
+.pos:hover td{
+	color: #000000;
+}
+            }
+
          
-        }
+        }   
         
     }
 }

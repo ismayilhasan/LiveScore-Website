@@ -309,6 +309,7 @@ ul {
 
 #Hero {
   background-color: #edf2f6;
+  position: relative;
 }
 #Hero .categoires {
   padding: 10px 0;
@@ -589,6 +590,7 @@ ul {
   background-color: rgba(180, 204, 223, 0.4509803922);
   padding: 0 10px;
   border-radius: 8px;
+  cursor: pointer;
 }
 #Hero .matches .match-result .favorite-star {
   width: 10px;
@@ -631,11 +633,17 @@ ul {
   top: 0;
 }
 #Hero .current-match {
+  position: absolute;
+  z-index: 1;
+  display: none;
   background-color: #fff;
   border-radius: 5px;
-  padding: 28px 0;
+  padding: 28px 8px;
   font: 700 12px/1.14 Roboto, sans-serif;
   font-size: 15px;
+}
+#Hero .current-match .displaying-match {
+  display: block;
 }
 #Hero .current-match .heading ul {
   display: flex;
@@ -677,17 +685,431 @@ ul {
   height: 1px;
   background-color: #aaa;
 }
+#Hero .current-match .club-contents .active-tab-menu {
+  background-color: #0f598b !important;
+  color: #fff !important;
+  font-weight: bold !important;
+}
 #Hero .current-match .club-contents .tabs {
   cursor: pointer;
   text-transform: uppercase;
   color: rgb(29, 124, 216);
   opacity: 1;
-  padding: 16px;
   transition: opacity 200ms ease 0s;
-  height: 48px;
   font-weight: bold;
   margin: 0 17px;
   flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  transition: 0.5s;
+  margin-top: 14px;
+  flex: 1;
+}
+#Hero .current-match .club-contents .tabs:hover {
+  background-color: #0f598b;
+  color: #fff;
+}
+#Hero .current-match .club-contents .momentum {
+  text-align: center;
+  background-color: rgb(237, 241, 246);
+  padding: 10px 8px;
+  border-radius: 7px;
+  color: rgb(29, 124, 216);
+}
+#Hero .current-match .club-contents .momentum h5 {
+  font-weight: bold;
+}
+#Hero .current-match .club-contents .who-will-win-content {
+  padding: 10px 0;
+  background-color: rgb(237, 241, 246);
+  margin-top: 10px;
+  text-align: center;
+}
+#Hero .current-match .club-contents .who-will-win-content h5 {
+  font-weight: bold;
+  padding: 5px 0;
+}
+#Hero .current-match .club-contents .who-will-win {
+  display: flex;
+  justify-content: space-between;
+}
+#Hero .current-match .club-contents .who-will-win button {
+  outline: none;
+  border: none;
+  margin: 0 10px;
+  padding: 10px 16px;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 20px;
+  flex: 1;
+  color: #FFF;
+}
+#Hero .current-match .club-contents .who-will-win .left {
+  background-color: rgb(20, 172, 35);
+}
+#Hero .current-match .club-contents .who-will-win .middle {
+  background-color: rgb(164, 169, 179);
+}
+#Hero .current-match .club-contents .who-will-win .right {
+  background-color: rgb(29, 124, 216);
+}
+#Hero .current-match .club-contents .manager-head-2-head {
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgb(237, 241, 246);
+  margin-top: 10px;
+  border-radius: 7px;
+}
+#Hero .current-match .club-contents .manager-head-2-head h5 {
+  font-weight: bold;
+  font-size: 17px;
+}
+#Hero .current-match .club-contents .manager-head-2-head .body {
+  display: flex;
+  justify-content: space-between;
+}
+#Hero .current-match .club-contents .manager-head-2-head .body .left-team, #Hero .current-match .club-contents .manager-head-2-head .body .right-team {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+#Hero .current-match .club-contents .manager-head-2-head .body .left-team img, #Hero .current-match .club-contents .manager-head-2-head .body .right-team img {
+  border-radius: 100%;
+}
+#Hero .current-match .club-contents .manager-head-2-head .body .left-team p, #Hero .current-match .club-contents .manager-head-2-head .body .right-team p {
+  text-align: left;
+}
+#Hero .current-match .club-contents .manager-head-2-head .body .middle-team p {
+  font-size: 30px;
+}
+#Hero .current-match .club-contents .manager-head-2-head .body .manager-names {
+  color: rgb(34, 34, 38);
+}
+#Hero .current-match .club-contents .head-2-head {
+  margin-top: 30px;
+}
+#Hero .current-match .club-contents .head-2-head .left-team-head, #Hero .current-match .club-contents .head-2-head .right-team-head {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+#Hero .current-match .club-contents .head-2-head .middle-team p {
+  font-size: 30px;
+}
+#Hero .current-match .club-contents .head-2-head p {
+  text-align: left;
+}
+#Hero .current-match .club-contents .lineups-content .text-danger {
+  color: #FF3D3D;
+}
+#Hero .current-match .club-contents .lineups-content .label {
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #6E6E6E;
+  font-weight: 700;
+  letter-spacing: 0.095em;
+  margin-bottom: 4px;
+}
+#Hero .current-match .club-contents .lineups-content .mb-05 {
+  margin-bottom: 4px;
+}
+#Hero .current-match .club-contents .lineups-content .mb-0 {
+  margin-bottom: 0 !important;
+}
+#Hero .current-match .club-contents .lineups-content .mb-1 {
+  margin-bottom: 8px;
+}
+#Hero .current-match .club-contents .lineups-content .mt-1 {
+  margin-top: 8px;
+}
+#Hero .current-match .club-contents .lineups-content .mt-2 {
+  margin-top: 16px;
+}
+#Hero .current-match .club-contents .lineups-content .ml-1 {
+  margin-left: 8px;
+}
+#Hero .current-match .club-contents .lineups-content .ml-2 {
+  margin-left: 16px;
+}
+#Hero .current-match .club-contents .lineups-content .ml-3 {
+  margin-left: 24px;
+}
+#Hero .current-match .club-contents .lineups-content .ml-4 {
+  margin-left: 32px;
+}
+#Hero .current-match .club-contents .lineups-content .ml-5 {
+  margin-left: 40px;
+}
+#Hero .current-match .club-contents .lineups-content .mr-1 {
+  margin-right: 8px;
+}
+#Hero .current-match .club-contents .lineups-content .mr-2 {
+  margin-right: 16px;
+}
+#Hero .current-match .club-contents .lineups-content .mr-3 {
+  margin-right: 24px;
+}
+#Hero .current-match .club-contents .lineups-content .mr-4 {
+  margin-right: 32px;
+}
+#Hero .current-match .club-contents .lineups-content .mr-5 {
+  margin-right: 40px;
+}
+#Hero .current-match .club-contents .lineups-content html, #Hero .current-match .club-contents .lineups-content body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  background: #212121;
+  color: #D2D2D2;
+  width: 414px;
+  font-weight: 600;
+  margin: 8px auto;
+  padding: 16px;
+}
+#Hero .current-match .club-contents .lineups-content * {
+  box-sizing: border-box;
+}
+#Hero .current-match .club-contents .lineups-content .player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: 14px;
+  margin: 0 28px;
+}
+#Hero .current-match .club-contents .lineups-content .player--home .player__number {
+  background: #BE2C2C;
+}
+#Hero .current-match .club-contents .lineups-content .player--away .player__number {
+  background: #31A49B;
+}
+#Hero .current-match .club-contents .lineups-content .player__number {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  margin-bottom: 2.6666666667px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#Hero .current-match .club-contents .lineups-content .player__name {
+  font-size: 10px;
+  font-size: 10px;
+  position: absolute;
+  bottom: 0;
+  white-space: nowrap;
+  bottom: 0;
+}
+#Hero .current-match .club-contents .lineups-content .formation {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#Hero .current-match .club-contents .lineups-content .formation--home .player__number {
+  background: #BE2C2C;
+}
+#Hero .current-match .club-contents .lineups-content .formation--away {
+  transform: rotate(180deg);
+}
+#Hero .current-match .club-contents .lineups-content .formation--away .player__number {
+  background: #31A49B;
+}
+#Hero .current-match .club-contents .lineups-content .formation__line {
+  display: flex;
+  padding: 0 24px;
+  margin-bottom: 8px;
+  justify-content: center;
+}
+#Hero .current-match .club-contents .lineups-content .player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: 14px;
+  margin: 0 28px;
+}
+#Hero .current-match .club-contents .lineups-content .player__number {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  margin-bottom: 2.6666666667px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#Hero .current-match .club-contents .lineups-content .player__name {
+  font-size: 10px;
+  font-size: 10px;
+  position: absolute;
+  bottom: 0;
+  white-space: nowrap;
+  bottom: 0;
+}
+#Hero .current-match .club-contents .lineups-content .field {
+  border-radius: 4px;
+  background: #29502C;
+  padding: 8px;
+}
+#Hero .current-match .club-contents .lineups-content .field__center-line {
+  width: 100%;
+  height: 2px;
+  background: #507450;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+#Hero .current-match .club-contents .lineups-content .field__center-line:after {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #507450;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 100%;
+}
+#Hero .current-match .club-contents .lineups-content .field__center-line:before {
+  width: 8px;
+  height: 8px;
+  background: #507450;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 100%;
+}
+#Hero .current-match .club-contents .lineups-content .field__container {
+  border-radius: 2px;
+  border: 2px solid #507450;
+  position: relative;
+}
+#Hero .current-match .club-contents .lineups-content .field__half {
+  position: relative;
+  height: 290px;
+  overflow: hidden;
+}
+#Hero .current-match .club-contents .lineups-content .field__half--reverse {
+  transform: rotate(180deg);
+}
+#Hero .current-match .club-contents .lineups-content .field .penalty-box {
+  border: 2px solid #507450;
+  width: 35%;
+  height: 50px;
+  position: absolute;
+  top: -2px;
+  margin: auto;
+  right: 0;
+  left: 0;
+}
+#Hero .current-match .club-contents .lineups-content .field .penalty-box__container {
+  position: relative;
+  height: 100%;
+  background: #29502C;
+  z-index: 1;
+}
+#Hero .current-match .club-contents .lineups-content .field .penalty-box:after {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 2px solid #507450;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  content: "";
+  display: block;
+}
+#Hero .current-match .club-contents .lineups-content .field .penalty-box__infield {
+  border: 2px solid #507450;
+  width: 35%;
+  height: 38%;
+  position: absolute;
+  top: -2px;
+  margin: auto;
+  right: 0;
+  left: 0;
+}
+#Hero .current-match .club-contents .lineups-content .field__corner {
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: -10px;
+  border: 2px solid #507450;
+}
+#Hero .current-match .club-contents .lineups-content .field__corner--left {
+  left: -10px;
+}
+#Hero .current-match .club-contents .lineups-content .field__corner--right {
+  right: -10px;
+}
+#Hero .current-match .club-contents .standings {
+  background-color: rgb(237, 241, 246);
+}
+#Hero .current-match .club-contents .standings .heading {
+  text-align: center;
+  padding: 10px 0;
+}
+#Hero .current-match .club-contents .standings .ptable table {
+  margin: 30px auto;
+  border-collapse: collapse;
+}
+#Hero .current-match .club-contents .standings .ptable {
+  margin: 0px 0% 30px 0%;
+}
+#Hero .current-match .club-contents .standings th, #Hero .current-match .club-contents .standings td {
+  padding: 10px;
+}
+#Hero .current-match .club-contents .standings th {
+  background-color: black;
+  color: #ffe221;
+}
+#Hero .current-match .club-contents .standings .headin {
+  text-align: center;
+  text-decoration: none;
+  color: #ffe221;
+  margin: 30px;
+  display: block;
+}
+#Hero .current-match .club-contents .standings .wpos {
+  text-align: center;
+}
+#Hero .current-match .club-contents .standings .wpos td {
+  color: #77ff21;
+}
+#Hero .current-match .club-contents .standings .pos {
+  text-align: center;
+}
+#Hero .current-match .club-contents .standings .pos td {
+  color: #ff7b21;
+}
+#Hero .current-match .club-contents .standings table .col {
+  border-bottom: 1px solid #FFFFFF;
+}
+#Hero .current-match .club-contents .standings .wpos:hover {
+  background-color: #77ff21;
+}
+#Hero .current-match .club-contents .standings .wpos:hover td {
+  color: #000000;
+}
+#Hero .current-match .club-contents .standings .pos:hover {
+  background-color: #ff7b21;
+}
+#Hero .current-match .club-contents .standings .pos:hover td {
+  color: #000000;
 }
 
 .active-sidebar {

@@ -1,0 +1,167 @@
+#HeroRankings {
+    background-color: #edf2f6;
+    padding: 30px 0;
+  
+    .list-group-item {
+      cursor: pointer;
+    }
+  
+    .name {
+      display: flex;
+      flex-direction: column;
+      margin-left: 8px;
+  
+      span:first-child {
+        color: rgb(34, 34, 38);
+        text-align: left;
+        font: 400 14px / 1.14 Roboto, sans-serif;
+      }
+  
+      span:last-child {
+        color: rgba(34, 34, 38, 0.45);
+        text-align: left;
+        font: 500 12px / 1.33 Roboto, sans-serif;
+      }
+    }
+    .rankings-leagues {
+      border-top: none;
+    }
+    .ligs {
+      padding: 14px 0;
+      border-radius: 8px;
+      border: 1px solid rgb(29, 124, 216);
+      background-color: rgba(180, 204, 223, 0.4509803922);
+      .top-leagues-heading,
+      .all-leagues-heading {
+        color: rgb(111, 111, 185);
+      }
+      .flags {
+        width: 24px;
+        object-fit: contain;
+  
+        background-color: #fff;
+      }
+  
+      .flag-names {
+        color: #000;
+        font-weight: bold;
+      }
+    }
+  
+    .team-image {
+      width: 30px;
+      object-fit: contain;
+    }
+  
+    .league-and-country {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .matches {
+      padding: 14px 0;
+  
+      .all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .left {
+        display: flex;
+      }
+      .champion-league-logo {
+        width: 30px;
+        object-fit: contain;
+        margin-right: 10px;
+      }
+      a {
+        color: #000;
+      }
+      .description {
+        font-weight: bold;
+      }
+      .league {
+        font-weight: 200;
+      }
+  
+      .match-result {
+        .teams {
+          display: flex;
+          align-items: center;
+        }
+        .current-time {
+          color: #000;
+        }
+        .current-scores {
+          color: #000;
+        }
+        .team-img {
+          width: 20px;
+        }
+        .team-name {
+          color: #000;
+        }
+        .content {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          background-color: #b4ccdf73;
+          padding: 0 10px;
+          border-radius: 8px;
+          cursor: pointer;
+        }
+        .favorite-star {
+          width: 10px;
+        }
+      }
+    }
+    .news-header {
+      width: 69%;
+      color: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid rgb(29, 124, 216);
+      border-radius: 8px;
+      padding: 10px 10px;
+      margin-top: 10px;
+    }
+    .news {
+      width: 69%;
+      position: relative;
+  
+      .news-content {
+        .news-photo {
+          width: 305px;
+          height: 169px;
+          margin-top: 10px;
+          border-radius: 8px;
+          object-fit: contain;
+        }
+        .news-text {
+          color: #fff;
+          h2 {
+            font-size: 20px;
+            position: absolute;
+            bottom: 6px;
+            left: 14px;
+          }
+        }
+      }
+    }
+    .advertising-banner {
+      position: sticky;
+      top: 0;
+    }
+  }
+
+
+// Active Classes
+.displaying-match {
+    display: block !important;
+  }
+  
+  .displaying-rankings {
+    visibility: visible;
+  }
+  
